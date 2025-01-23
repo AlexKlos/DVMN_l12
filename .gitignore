@@ -112,6 +112,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+venv_lesson_3/
 
 # Spyder project settings
 .spyderproject
