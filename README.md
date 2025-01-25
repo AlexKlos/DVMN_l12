@@ -1,4 +1,4 @@
-# Электронный дневник школы
+<!-- # Электронный дневник школы
 
 Этот сайт - интерфейс для учеников школы. Здесь можно посмотреть оценки, расписание и прочую открытую информацию. Учителя заполняют базу данных через другой сайт. Ставят там оценки и т.д.
 
@@ -47,26 +47,7 @@
 - `SECRET_KEY` — секретный ключ проекта
 - `ALLOWED_HOSTS` — см [документацию Django](https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts).
 - `DATABASE_NAME` — путь до базы данных, например: `schoolbase.sqlite3`
-
-## Структура проекта
-```
-project_root/
-├─ manage.py
-├─ requirements.txt
-├─ .env     
-├─ project/
-│  ├─ settings.py
-│  └─ urls.py
-└─ datacenter/
-   ├─ __init__.py
-   ├─ models.py
-   ├─ scripts.py
-   ├─ views.py
-   ├─ migrations/
-   │  └─ ...
-   └─ templates/
-      └─ ...
-```
+----------------------------------- -->
 # Редактирование базы данных
 
 В проект добавлен скрипт `scripts.py` для редактирования базы данных.
@@ -112,6 +93,26 @@ project_root/
 После запуска дождитесь окончания работы скрипта, затем обновите страницу сайта для контроля выполнения.
 
 --------------
+
+## Структура проекта
+```
+project_root/
+├─ manage.py
+├─ requirements.txt
+├─ .env     
+├─ project/
+│  ├─ settings.py
+│  └─ urls.py
+└─ datacenter/
+   ├─ __init__.py
+   ├─ models.py
+   ├─ scripts.py
+   ├─ views.py
+   ├─ migrations/
+   │  └─ ...
+   └─ templates/
+      └─ ...
+```
 ## Цели проекта
 
 Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
