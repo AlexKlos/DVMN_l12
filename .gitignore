@@ -137,3 +137,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+.git/
+datacenter/
+project/
+schoolbase/
+manage.py
+requirements.txt
