@@ -61,7 +61,7 @@ def create_commendation(schoolkid: Schoolkid, subject_title: str):
         title=subject_title, 
         year_of_study=schoolkid.year_of_study
     ).first()
-    if subject == None:
+    if not subject:
         print(f'Уточните название предмета. Предмет {subject_title} не найден.')
         return
     lesson = Lesson.objects.filter(
