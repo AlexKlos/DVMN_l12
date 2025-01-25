@@ -69,6 +69,9 @@ def create_commendation(schoolkid: Schoolkid, subject_title: str):
         group_letter=schoolkid.group_letter, 
         subject=subject
     ).order_by('-date').first()
+    if not lesson:
+        print(f'Уточните название предмета и ученика. Предмет {subject_title} для ученика {schoolkid} не найден.')
+        return
     teacher = lesson.teacher
     created = lesson.date
 
